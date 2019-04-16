@@ -14,21 +14,21 @@
       var ticketyoung = (ticket / 100)*80;
       var ticketold = (ticket / 100)*60;
 
-      if (age < 18) {
+      if (age <= 18) {
 
         ticket = ticketyoung;
-        document.writeln(ticket);
+        document.writeln(ticket + "$");
 
-      } else if (age > 65) {
+      } else if (age >= 65) {
 
         ticket = ticketold;
-        document.writeln(ticket);
+        document.writeln(ticket + "$");
 
       }
        else {
 
         ticket = ticket;
-        document.writeln(ticket);
+        document.writeln(ticket + "$");
 
       }
 
