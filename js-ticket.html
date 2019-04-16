@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      var km = prompt('Quanti km è lungo il tuo viaggio?');
+      var age = prompt('Quanti anni hai?');
+      var ticket = (0.21 * km);
+      var ticketyoung = (ticket / 100)*80;
+      var ticketold = (ticket / 100)*60;
+
+      if (age < 18) {
+
+        ticket = ticketyoung;
+        document.writeln(ticket);
+
+      } else if (age > 65) {
+
+        ticket = ticketold;
+        document.writeln(ticket);
+
+      }
+       else {
+
+        ticket = ticket;
+        document.writeln(ticket);
+
+      }
+
+    </script>
+
+  </body>
+</html>
