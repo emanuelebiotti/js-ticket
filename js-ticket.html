@@ -12,7 +12,7 @@
       var age = prompt('Quanti anni hai?');
       var ticket = (0.21 * km);
       var ticketyoung = (ticket / 100)*80;
-      var ticketold = (ticket / 100)*60;
+      var ticketsenior = (ticket / 100)*60;
 
       if (age <= 18) {
 
@@ -21,7 +21,7 @@
 
       } else if (age >= 65) {
 
-        ticket = ticketold;
+        ticket = ticketsenior;
         document.writeln("Il tuo biglietto costerà" + " " + ticket + "$");
 
       }
